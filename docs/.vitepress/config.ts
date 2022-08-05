@@ -12,7 +12,8 @@ export default defineConfig({
 				text: 'Javascript',
 				collapsible: true,
 				items: [
-					{ text: '数组', link: '/javascript/数组' }
+					{ text: '数组', link: '/javascript/数组' },
+					{ text: '对象', link: '/javascript/对象' }
 				]
 			}
 		]
