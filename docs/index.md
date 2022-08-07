@@ -7,7 +7,7 @@ hero:
   actions:
     - theme: brand
       text: 前端博客
-      link: /javascript/数组
+      link: /blog/javascript/数组
     - theme: alt
       text: GitHub
       link: https://github.com/cyxbwww/vitepress-blog
