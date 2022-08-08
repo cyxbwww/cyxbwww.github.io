@@ -2,8 +2,7 @@
 
 ## Javascript
 
-- [数组内置方法](./javascript/数组)
-- [数组常用方法](./javascript/数组方法)
-- [对象内置方法](./javascript/对象)
-- [Map和Set（映射和集合）](./javascript/Map和Set)
-
+- [数组内置方法](/blog/javascript/数组.md)
+- [数组常用方法](/blog/javascript/数组方法.md)
+- [对象内置方法](/blog/javascript/对象.md)
+- [Map和Set（映射和集合）](/blog/javascript/Map和Set.md)
