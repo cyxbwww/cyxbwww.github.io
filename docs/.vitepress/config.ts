@@ -18,8 +18,7 @@ export default defineConfig({
 						{ text: '数组', link: '/blog/javascript/数组' },
 						{ text: '数组方法', link: '/blog/javascript/数组方法' },
 						{ text: '对象', link: '/blog/javascript/对象' },
-						{ text: 'Map', link: '/blog/javascript/Map' },
-						{ text: 'Set', link: '/blog/javascript/Set' },
+						{ text: 'Map and Set', link: '/blog/javascript/Map和Set' },
 					]
 				}
 			],
