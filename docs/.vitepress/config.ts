@@ -1,7 +1,7 @@
 import { defineConfig } from 'vitepress'
 
 export default defineConfig({
-	base:'/docs/',
+	base:'/',
 	outDir: '../public',
 	title: 'Luooo的博客',
 	themeConfig: {
