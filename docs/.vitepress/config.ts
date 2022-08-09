@@ -1,8 +1,6 @@
 import { defineConfig } from 'vitepress'
 
 export default defineConfig({
-	base:'/',
-	outDir: '../public',
 	title: 'Luooo的博客',
 	themeConfig: {
 		nav: [
