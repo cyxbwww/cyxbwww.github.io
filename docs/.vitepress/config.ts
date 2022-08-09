@@ -2,6 +2,9 @@ import { defineConfig } from 'vitepress'
 
 export default defineConfig({
 	title: 'Luooo的博客',
+	head: [
+			[ 'link', { rel: 'icon', href: '/logo.png' } ]
+	],
 	themeConfig: {
 		logo: "/logo.png",
 		nav: [
