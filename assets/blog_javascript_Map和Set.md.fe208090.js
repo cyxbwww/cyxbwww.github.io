@@ -27,11 +27,11 @@ import{_ as s,c as a,o as n,a as l}from"./app.ae232a59.js";const i=JSON.parse('{
 <span class="line"></span>
 <span class="line"><span style="color:#676E95;font-style:italic;">// \u904D\u5386\u6240\u6709\u7684\u5B9E\u4F53 [key, value]</span></span>
 <span class="line"><span style="color:#89DDFF;font-style:italic;">for</span><span style="color:#A6ACCD;"> (</span><span style="color:#C792EA;">let</span><span style="color:#A6ACCD;"> v </span><span style="color:#89DDFF;">of</span><span style="color:#A6ACCD;"> map) </span><span style="color:#89DDFF;">{</span></span>
-<span class="line"><span style="color:#F07178;">  </span><span style="color:#676E95;font-style:italic;">/*</span></span>
-<span class="line"><span style="color:#676E95;font-style:italic;">    [&#39;cucumber&#39;, 500]</span></span>
-<span class="line"><span style="color:#676E95;font-style:italic;">    [&#39;tomatoes&#39;, 350]</span></span>
-<span class="line"><span style="color:#676E95;font-style:italic;">    [&#39;onion&#39;, 50]</span></span>
-<span class="line"><span style="color:#676E95;font-style:italic;">  */</span></span>
+<span class="line"><span style="color:#F07178;">  </span><span style="color:#676E95;font-style:italic;">/**</span></span>
+<span class="line"><span style="color:#676E95;font-style:italic;">   * [&#39;cucumber&#39;, 500]</span></span>
+<span class="line"><span style="color:#676E95;font-style:italic;">   * [&#39;tomatoes&#39;, 350]</span></span>
+<span class="line"><span style="color:#676E95;font-style:italic;">   * [&#39;onion&#39;, 50]</span></span>
+<span class="line"><span style="color:#676E95;font-style:italic;">   */</span></span>
 <span class="line"><span style="color:#F07178;">  </span><span style="color:#A6ACCD;">console</span><span style="color:#89DDFF;">.</span><span style="color:#82AAFF;">log</span><span style="color:#F07178;">(</span><span style="color:#A6ACCD;">v</span><span style="color:#F07178;">)</span><span style="color:#89DDFF;">;</span></span>
 <span class="line"><span style="color:#89DDFF;">}</span></span>
 <span class="line"></span></code></pre></div><h3 id="\u4ECE\u5BF9\u8C61\u521B\u5EFA-map" tabindex="-1">\u4ECE\u5BF9\u8C61\u521B\u5EFA Map <a class="header-anchor" href="#\u4ECE\u5BF9\u8C61\u521B\u5EFA-map" aria-hidden="true">#</a></h3><div class="language-javascript"><span class="copy"></span><pre><code><span class="line"><span style="color:#C792EA;">const</span><span style="color:#A6ACCD;"> obj </span><span style="color:#89DDFF;">=</span><span style="color:#A6ACCD;"> </span><span style="color:#89DDFF;">{</span></span>
