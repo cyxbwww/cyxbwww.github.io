@@ -52,11 +52,11 @@ for (let v of map.values()) {
 
 // 遍历所有的实体 [key, value]
 for (let v of map) {
-  /*
-    ['cucumber', 500]
-    ['tomatoes', 350]
-    ['onion', 50]
-  */
+  /**
+   * ['cucumber', 500]
+   * ['tomatoes', 350]
+   * ['onion', 50]
+   */
   console.log(v);
 }
 ```
