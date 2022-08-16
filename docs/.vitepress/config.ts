@@ -5,8 +5,15 @@ export default defineConfig({
 	head: [
 			[ 'link', { rel: 'icon', href: '/logo.png' } ]
 	],
+	lastUpdated: true,
 	themeConfig: {
-		logo: "/logo.png",
+		logo: '/logo.png',
+		outlineTitle: '目录',
+		lastUpdatedText: '最近更新时间',
+		docFooter: {
+			prev: '上一页',
+			next: '下一页'
+		},
 		nav: [
 			{ text: '博客', link: '/blog/' },
 			{ text: '个人项目', link: '/demo/' },
