@@ -15,15 +15,15 @@
 
 ``` javascript
 const map = new Map();
-
+ 
 map.set('1', 'str1'); // 字符串键
 map.set(1, 'num1'); // 数字键
 map.set(true, 'bool1'); // 布尔值键
-
+ 
 // Object会将键转化为字符串，Map 会保留键的类型
 alert( map.get(1)   ); // 'num1'
 alert( map.get('1') ); // 'str1'
-
+ 
 alert( map.size ); // 3
 ```
 
@@ -39,17 +39,17 @@ const map = new Map([
   ['tomatoes', 350],
   ['onion', 50]
 ]);
-
+ 
 // 遍历所有的键
 for (let v of map.keys()) {
   console.log(v); // cucumber, tomatoes, onion
 }
-
+ 
 // 遍历所有的值
 for (let v of map.values()) {
   console.log(v); // 500, 350, 50
 }
-
+ 
 // 遍历所有的实体 [key, value]
 for (let v of map) {
   /**
@@ -68,9 +68,9 @@ const obj = {
   name: 'John',
   age: 30
 };
-
+ 
 const map = new Map(Object.entries(obj));
-
+ 
 console.log(map.get('name')); // John
 ```
 
@@ -81,9 +81,9 @@ const map = new Map();
 map.set('banana', 1);
 map.set('orange', 2);
 map.set('meat', 4);
-
+ 
 const obj = Object.fromEntries(map.entries());
-
+ 
 console.log(obj.orange); // 2
 ```
 ## Set（集合）
@@ -103,11 +103,11 @@ console.log(obj.orange); // 2
 
 ``` javascript
 const set = new Set(['oranges', 'apples', 'bananas']);
-
+ 
 for (let v of set) {
   console.log(v); // oranges, apples, bananas
 }
-
+ 
 // 与 forEach 相同：
 set.forEach((value) => {
   console.log(value); // oranges, apples, bananas
