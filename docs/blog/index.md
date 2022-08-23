@@ -8,3 +8,4 @@
 - [对象内置方法](/blog/javascript/对象内置方法.md)
 - [属性标志和属性描述符](/blog/javascript/属性标志和属性描述符.md)
 - [Map和Set](/blog/javascript/Map和Set.md)
+- [函数](/blog/javascript/函数.md)

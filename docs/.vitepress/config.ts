@@ -32,6 +32,7 @@ export default defineConfig({
 						{ text: '对象内置方法', link: '/blog/javascript/对象内置方法' },
 						{ text: '属性标志和属性描述符', link: '/blog/javascript/属性标志和属性描述符' },
 						{ text: 'Map和Set', link: '/blog/javascript/Map和Set' },
+						{ text: '函数', link: '/blog/javascript/函数' },
 					]
 				}
 			],
