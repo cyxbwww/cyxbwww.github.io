@@ -9,3 +9,4 @@
 - [属性标志和属性描述符](/blog/javascript/属性标志和属性描述符.md)
 - [Map和Set](/blog/javascript/Map和Set.md)
 - [函数](/blog/javascript/函数.md)
+- [期约与异步函数](/blog/javascript/期约与异步函数.md)
