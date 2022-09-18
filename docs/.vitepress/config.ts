@@ -36,6 +36,14 @@ export default defineConfig({
 						{ text: '函数', link: '/blog/javascript/函数' },
 						{ text: '期约与异步函数', link: '/blog/javascript/期约与异步函数' },
 					]
+				},
+				{
+					text: 'npm',
+					collapsible: true,
+					collapsed: true,
+					items: [
+						{ text: '基础知识', link: '/blog/npm/基础' }
+					]
 				}
 			],
 			'/book/': [
@@ -51,6 +59,7 @@ export default defineConfig({
 				}, {
 					'text': 'Vue.js设计与实现',
 					collapsible: true,
+					collapsed: true,
 					items: [
 						{ text: '框架设计概览', link: '/book/Vue.js设计与实现/框架设计概览' },
 						{ text: '响应系统', link: '/book/Vue.js设计与实现/响应系统' },
