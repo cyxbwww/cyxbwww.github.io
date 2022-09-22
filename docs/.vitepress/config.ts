@@ -42,7 +42,8 @@ export default defineConfig({
 					collapsible: true,
 					collapsed: true,
 					items: [
-						{ text: '基础知识', link: '/blog/npm/基础' },
+						{ text: '介绍', link: '/blog/npm/介绍' },
+						{ text: 'package.json', link: '/blog/npm/package.json' },
 						{ text: 'npm包开发', link: '/blog/npm/npm包开发' }
 					]
 				}
