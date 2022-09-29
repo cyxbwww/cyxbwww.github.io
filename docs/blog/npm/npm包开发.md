@@ -72,3 +72,12 @@ $ yalc update
 $ yalc remove --all
 ```
 
+## 发布到 NPM
+
+``` sh
+$ npm publish
+
+# 发布 beta 版本
+$ npm publish --tag beta
+```
+
