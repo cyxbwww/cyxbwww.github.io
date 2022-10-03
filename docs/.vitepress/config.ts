@@ -78,6 +78,7 @@ export default defineConfig({
 					collapsible: true,
 					items: [
 						{ text: '项目搭建', link: '/demo/博客后台管理/项目搭建' },
+						{ text: '目录说明', link: '/demo/博客后台管理/目录说明' }
 					]
 				}
 			]
