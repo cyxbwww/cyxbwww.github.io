@@ -1,5 +1,5 @@
 # 目录
-## [博客后台管理](/demo/博客后台管理/项目搭建)
+## [博客管理系统前端项目（Vue.js）](/demo/博客管理系统前端项目（Vue）/项目搭建)
 
 [![license](https://img.shields.io/badge/license-MIT-green.svg)](https://github.com/cyxbwww/cyxbwww-admin/blob/main/LICENSE)
 
@@ -22,6 +22,7 @@
 
 ### 后端服务
 
+- [cyxbwww-admin-eggjs(开发中)](https://github.com/cyxbwww/cyxbwww-admin-eggjs)
 - [cyxbwww-admin-nestjs(开发中)](https://github.com/cyxbwww/cyxbwww-admin-nestjs)
 
 ### 安装使用
@@ -56,3 +57,7 @@ $ npm run build
 ### License
 
 [MIT © cyxbwww-2022](https://github.com/cyxbwww/cyxbwww-admin/blob/main/LICENSE)
+
+## 博客管理系统后端项目（Egg.js）
+
+## 博客管理系统后端项目（Nest.js）

@@ -26,6 +26,7 @@ export default defineConfig({
 				{
 					text: 'Javascript',
 					collapsible: true,
+					collapsed: true,
 					items: [
 						{ text: '数组', link: '/blog/javascript/数组' },
 						{ text: '数组内置方法', link: '/blog/javascript/数组内置方法' },
@@ -38,7 +39,58 @@ export default defineConfig({
 					]
 				},
 				{
-					text: 'npm',
+					text: 'TypeScript',
+					collapsible: true,
+					collapsed: true,
+					items: [
+						{ text: '基础类型', link: '/blog/typescript/基础类型' },
+						{ text: '变量声明', link: '/blog/typescript/变量声明' },
+						{ text: '接口', link: '/blog/typescript/接口' },
+						{ text: '类', link: '/blog/typescript/类' },
+						{ text: '函数', link: '/blog/typescript/函数' },
+						{ text: '泛型', link: '/blog/typescript/泛型' },
+						{ text: '枚举', link: '/blog/typescript/枚举' },
+						{ text: '类型推论', link: '/blog/typescript/类型推论' },
+						{ text: '类型兼容性', link: '/blog/typescript/类型兼容性' },
+						{ text: '高级类型', link: '/blog/typescript/高级类型' },
+						{ text: 'Symbols', link: '/blog/typescript/Symbols' },
+						{ text: '迭代器和生成器', link: '/blog/typescript/迭代器和生成器' },
+						{ text: '模块', link: '/blog/typescript/模块' },
+						{ text: '命名空间', link: '/blog/typescript/命名空间' },
+						{ text: '声明合并', link: '/blog/typescript/声明合并' },
+					]
+				},
+				{
+					text: 'Vue',
+					collapsible: true,
+					collapsed: true,
+					items: [
+						{ text: '全局API', link: '/blog/vue/全局API' },
+						{ text: '组合式API', link: '/blog/vue/组合式API' },
+						{ text: '选项式API', link: '/blog/vue/选项式API' },
+						{ text: '内置内容', link: '/blog/vue/内置内容' },
+						{ text: '单文件组件', link: '/blog/vue/单文件组件' },
+						{ text: '进阶API', link: '/blog/vue/进阶API' }
+					]
+				},
+				{
+					text: 'Egg.js',
+					collapsible: true,
+					collapsed: true,
+					items: [
+						{ text: '基础', link: '/blog/eggjs/基础' }
+					]
+				},
+				{
+					text: 'Nest.js',
+					collapsible: true,
+					collapsed: true,
+					items: [
+						{ text: '基础', link: '/blog/nestjs/基础' }
+					]
+				},
+				{
+					text: 'NPM',
 					collapsible: true,
 					collapsed: true,
 					items: [
@@ -74,11 +126,27 @@ export default defineConfig({
 			],
 			'/demo/': [
 				{
-					text: '博客管理系统',
+					text: '博客管理系统前端项目（Vue.js）',
 					collapsible: true,
 					items: [
-						{ text: '项目搭建', link: '/demo/博客后台管理/项目搭建' },
-						{ text: '目录说明', link: '/demo/博客后台管理/目录说明' }
+						{ text: '项目搭建', link: '/demo/博客管理系统前端项目（Vue.js）/项目搭建' },
+						{ text: '目录说明', link: '/demo/博客管理系统前端项目（Vue.js）/目录说明' }
+					]
+				},
+				{
+					text: '博客管理系统后端项目（Egg.js）',
+					collapsible: true,
+					items: [
+						{ text: '项目搭建', link: '/demo/博客管理系统后端（Egg.js）/项目搭建' },
+						{ text: '目录说明', link: '/demo/博客管理系统后端（Egg.js）/目录说明' }
+					]
+				},
+				{
+					text: '博客管理系统后端项目（Nest.js）',
+					collapsible: true,
+					items: [
+						{ text: '项目搭建', link: '/demo/博客管理系统后端（Nest.js）/项目搭建' },
+						{ text: '目录说明', link: '/demo/博客管理系统后端（Nest.js）/目录说明' }
 					]
 				}
 			]
