@@ -137,16 +137,16 @@ export default defineConfig({
 					text: '博客管理系统后端项目（Egg.js）',
 					collapsible: true,
 					items: [
-						{ text: '项目搭建', link: '/demo/博客管理系统后端（Egg.js）/项目搭建' },
-						{ text: '目录说明', link: '/demo/博客管理系统后端（Egg.js）/目录说明' }
+						{ text: '项目搭建', link: '/demo/博客管理系统后端项目（Egg.js）/项目搭建' },
+						{ text: '目录说明', link: '/demo/博客管理系统后端项目（Egg.js）/目录说明' }
 					]
 				},
 				{
 					text: '博客管理系统后端项目（Nest.js）',
 					collapsible: true,
 					items: [
-						{ text: '项目搭建', link: '/demo/博客管理系统后端（Nest.js）/项目搭建' },
-						{ text: '目录说明', link: '/demo/博客管理系统后端（Nest.js）/目录说明' }
+						{ text: '项目搭建', link: '/demo/博客管理系统后端项目（Nest.js）/项目搭建' },
+						{ text: '目录说明', link: '/demo/博客管理系统后端项目（Nest.js）/目录说明' }
 					]
 				}
 			]
