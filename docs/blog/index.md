@@ -9,7 +9,8 @@
 - [属性标志和属性描述符](/blog/javascript/属性标志和属性描述符)
 - [Map和Set](/blog/javascript/Map和Set)
 - [函数](/blog/javascript/函数)
-- [期约与异步函数](/blog/javascript/期约与异步函数)
+- [期约](/blog/javascript/期约)
+- [异步函数](/blog/javascript/异步函数)
 
 ## Typescript
 
