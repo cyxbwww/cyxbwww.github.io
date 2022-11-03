@@ -37,6 +37,7 @@ export default defineConfig({
 						{ text: '函数', link: '/blog/javascript/函数' },
 						{ text: '期约', link: '/blog/javascript/期约' },
 						{ text: '异步函数', link: '/blog/javascript/异步函数' },
+						{ text: '迭代器', link: '/blog/javascript/迭代器' },
 					]
 				},
 				{
