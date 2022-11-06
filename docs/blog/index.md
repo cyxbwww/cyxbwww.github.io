@@ -11,7 +11,8 @@
 - [函数](/blog/javascript/函数)
 - [期约](/blog/javascript/期约)
 - [异步函数](/blog/javascript/异步函数)
-- [迭代器与生成器](/blog/javascript/迭代器与生成器)
+- [迭代器](/blog/javascript/迭代器)
+- [生成器](/blog/javascript/生成器)
 
 ## Typescript
 
