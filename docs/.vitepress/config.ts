@@ -35,10 +35,11 @@ export default defineConfig({
 						{ text: '属性标志和属性描述符', link: '/blog/javascript/属性标志和属性描述符' },
 						{ text: 'Map和Set', link: '/blog/javascript/Map和Set' },
 						{ text: '函数', link: '/blog/javascript/函数' },
-						{ text: '期约', link: '/blog/javascript/期约' },
-						{ text: '异步函数', link: '/blog/javascript/异步函数' },
+						{ text: '期约（ Promise ）', link: '/blog/javascript/期约' },
+						{ text: '异步函数（ async/await ）', link: '/blog/javascript/异步函数' },
 						{ text: '迭代器', link: '/blog/javascript/迭代器' },
 						{ text: '生成器', link: '/blog/javascript/生成器' },
+						{ text: '代理（ Proxy ）', link: '/blog/javascript/代理' },
 					]
 				},
 				{
