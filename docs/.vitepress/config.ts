@@ -39,7 +39,7 @@ export default defineConfig({
 						{ text: '异步函数（ async/await ）', link: '/blog/javascript/异步函数' },
 						{ text: '迭代器', link: '/blog/javascript/迭代器' },
 						{ text: '生成器', link: '/blog/javascript/生成器' },
-						{ text: '代理（ Proxy ）', link: '/blog/javascript/代理' },
+						{ text: '代理与反射（ Proxy/Reflect ）', link: '/blog/javascript/代理与反射' },
 					]
 				},
 				{

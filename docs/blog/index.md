@@ -13,7 +13,7 @@
 - [异步函数（ async/await ）](/blog/javascript/异步函数)
 - [迭代器](/blog/javascript/迭代器)
 - [生成器](/blog/javascript/生成器)
-- [代理（ Proxy ）](/blog/javascript/代理)
+- [代理与反射（ Proxy/Reflect ）](/blog/javascript/代理与反射)
 
 ## Typescript
 
