@@ -14,6 +14,7 @@
 - [迭代器](/blog/javascript/迭代器)
 - [生成器](/blog/javascript/生成器)
 - [代理与反射（ Proxy/Reflect ）](/blog/javascript/代理与反射)
+- [代理捕获器与反射方法](/blog/javascript/代理捕获器与反射方法)
 
 ## Typescript
 

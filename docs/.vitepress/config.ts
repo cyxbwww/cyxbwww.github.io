@@ -40,6 +40,7 @@ export default defineConfig({
 						{ text: '迭代器', link: '/blog/javascript/迭代器' },
 						{ text: '生成器', link: '/blog/javascript/生成器' },
 						{ text: '代理与反射（ Proxy/Reflect ）', link: '/blog/javascript/代理与反射' },
+						{ text: '代理捕获器与反射方法', link: '/blog/javascript/代理捕获器与反射方法' },
 					]
 				},
 				{
