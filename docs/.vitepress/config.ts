@@ -100,7 +100,7 @@ export default defineConfig({
 					collapsed: true,
 					items: [
 						{ text: '介绍', link: '/blog/npm/介绍' },
-						{ text: 'package.json', link: '/blog/npm/package.json' },
+						{ text: 'package.json', link: '/blog/npm/package' },
 						{ text: 'npm包开发', link: '/blog/npm/npm包开发' }
 					]
 				}
