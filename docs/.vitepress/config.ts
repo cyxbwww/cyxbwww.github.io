@@ -49,7 +49,8 @@ export default defineConfig({
 					collapsed: true,
 					items: [
 						{ text: '原始数据类型', link: '/blog/typescript/原始数据类型' },
-						{ text: '任意值', link: '/blog/typescript/任意值' }
+						{ text: '任意值', link: '/blog/typescript/任意值' },
+						{ text: '类型推论', link: '/blog/typescript/类型推论' }
 					]
 				},
 				{
