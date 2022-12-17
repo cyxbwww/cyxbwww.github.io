@@ -18,21 +18,7 @@
 
 ## Typescript
 
-- [基础类型](/blog/typescript/基础类型)
-- [变量声明](/blog/typescript/变量声明)
-- [接口](/blog/typescript/接口)
-- [类](/blog/typescript/类)
-- [函数](/blog/typescript/函数)
-- [泛型](/blog/typescript/泛型)
-- [枚举](/blog/typescript/枚举)
-- [类型推论](/blog/typescript/类型推论)
-- [类型兼容性](/blog/typescript/类型兼容性)
-- [高级类型](/blog/typescript/高级类型)
-- [Symbols](/blog/typescript/Symbols)
-- [迭代器和生成器](/blog/typescript/迭代器和生成器)
-- [模块](/blog/typescript/模块)
-- [命名空间](/blog/typescript/命名空间)
-- [声明合并](/blog/typescript/声明合并)
+- [原始数据类型](/blog/typescript/原始数据类型)
 
 ## Vue
 

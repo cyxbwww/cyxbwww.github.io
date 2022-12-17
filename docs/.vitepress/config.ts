@@ -48,21 +48,7 @@ export default defineConfig({
 					collapsible: true,
 					collapsed: true,
 					items: [
-						{ text: '基础类型', link: '/blog/typescript/基础类型' },
-						{ text: '变量声明', link: '/blog/typescript/变量声明' },
-						{ text: '接口', link: '/blog/typescript/接口' },
-						{ text: '类', link: '/blog/typescript/类' },
-						{ text: '函数', link: '/blog/typescript/函数' },
-						{ text: '泛型', link: '/blog/typescript/泛型' },
-						{ text: '枚举', link: '/blog/typescript/枚举' },
-						{ text: '类型推论', link: '/blog/typescript/类型推论' },
-						{ text: '类型兼容性', link: '/blog/typescript/类型兼容性' },
-						{ text: '高级类型', link: '/blog/typescript/高级类型' },
-						{ text: 'Symbols', link: '/blog/typescript/Symbols' },
-						{ text: '迭代器和生成器', link: '/blog/typescript/迭代器和生成器' },
-						{ text: '模块', link: '/blog/typescript/模块' },
-						{ text: '命名空间', link: '/blog/typescript/命名空间' },
-						{ text: '声明合并', link: '/blog/typescript/声明合并' },
+						{ text: '原始数据类型', link: '/blog/typescript/原始数据类型' }
 					]
 				},
 				{
