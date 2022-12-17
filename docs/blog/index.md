@@ -22,6 +22,7 @@
 - [任意值](/blog/typescript/任意值)
 - [类型推论](/blog/typescript/类型推论)
 - [联合类型](/blog/typescript/联合类型)
+- [接口](/blog/typescript/接口)
 
 ## Vue
 
