@@ -19,6 +19,7 @@
 ## Typescript
 
 - [原始数据类型](/blog/typescript/原始数据类型)
+- [任意值](/blog/typescript/任意值)
 
 ## Vue
 
