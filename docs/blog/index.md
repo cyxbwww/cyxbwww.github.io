@@ -21,6 +21,7 @@
 - [原始数据类型](/blog/typescript/原始数据类型)
 - [任意值](/blog/typescript/任意值)
 - [类型推论](/blog/typescript/类型推论)
+- [联合类型](/blog/typescript/联合类型)
 
 ## Vue
 
