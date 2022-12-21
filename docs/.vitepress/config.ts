@@ -54,6 +54,7 @@ export default defineConfig({
 						{ text: '联合类型', link: '/blog/typescript/联合类型' },
 						{ text: '接口', link: '/blog/typescript/接口' },
 						{ text: '数组的类型', link: '/blog/typescript/数组的类型' },
+						{ text: '函数的类型', link: '/blog/typescript/函数的类型' },
 					]
 				},
 				{

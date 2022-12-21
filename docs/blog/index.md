@@ -24,6 +24,7 @@
 - [联合类型](/blog/typescript/联合类型)
 - [接口](/blog/typescript/接口)
 - [数组的类型](/blog/typescript/数组的类型)
+- [函数的类型](/blog/typescript/函数的类型)
 
 ## Vue
 
