@@ -26,6 +26,7 @@
 - [数组的类型](/blog/typescript/数组的类型)
 - [函数的类型](/blog/typescript/函数的类型)
 - [类型断言](/blog/typescript/类型断言)
+- [声明文件](/blog/typescript/声明文件)
 
 ## Vue
 

@@ -56,6 +56,7 @@ export default defineConfig({
 						{ text: '数组的类型', link: '/blog/typescript/数组的类型' },
 						{ text: '函数的类型', link: '/blog/typescript/函数的类型' },
 						{ text: '类型断言', link: '/blog/typescript/类型断言' },
+						{ text: '声明文件', link: '/blog/typescript/声明文件' },
 					]
 				},
 				{
