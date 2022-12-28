@@ -32,6 +32,7 @@
 - [字符串字面量类型](/blog/typescript/字符串字面量类型)
 - [元组](/blog/typescript/元组)
 - [枚举](/blog/typescript/枚举)
+- [类](/blog/typescript/类)
 
 ## Vue
 

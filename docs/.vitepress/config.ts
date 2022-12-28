@@ -62,6 +62,7 @@ export default defineConfig({
 						{ text: '字符串字面量类型', link: '/blog/typescript/字符串字面量类型' },
 						{ text: '元组', link: '/blog/typescript/元组' },
 						{ text: '枚举', link: '/blog/typescript/枚举' },
+						{ text: '类', link: '/blog/typescript/类' },
 					]
 				},
 				{
