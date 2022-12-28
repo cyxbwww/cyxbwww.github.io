@@ -57,6 +57,11 @@ export default defineConfig({
 						{ text: '函数的类型', link: '/blog/typescript/函数的类型' },
 						{ text: '类型断言', link: '/blog/typescript/类型断言' },
 						{ text: '声明文件', link: '/blog/typescript/声明文件' },
+						{ text: '内置对象', link: '/blog/typescript/内置对象' },
+						{ text: '类型别名', link: '/blog/typescript/类型别名' },
+						{ text: '字符串字面量类型', link: '/blog/typescript/字符串字面量类型' },
+						{ text: '元组', link: '/blog/typescript/元组' },
+						{ text: '枚举', link: '/blog/typescript/枚举' },
 					]
 				},
 				{

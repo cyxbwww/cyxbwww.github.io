@@ -27,6 +27,11 @@
 - [函数的类型](/blog/typescript/函数的类型)
 - [类型断言](/blog/typescript/类型断言)
 - [声明文件](/blog/typescript/声明文件)
+- [内置对象](/blog/typescript/内置对象)
+- [类型别名](/blog/typescript/类型别名)
+- [字符串字面量类型](/blog/typescript/字符串字面量类型)
+- [元组](/blog/typescript/元组)
+- [枚举](/blog/typescript/枚举)
 
 ## Vue
 
