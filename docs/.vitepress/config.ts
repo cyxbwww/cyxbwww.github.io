@@ -63,6 +63,7 @@ export default defineConfig({
 						{ text: '元组', link: '/blog/typescript/元组' },
 						{ text: '枚举', link: '/blog/typescript/枚举' },
 						{ text: '类', link: '/blog/typescript/类' },
+						{ text: '类与接口', link: '/blog/typescript/类与接口' },
 					]
 				},
 				{
