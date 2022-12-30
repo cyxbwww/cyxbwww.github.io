@@ -34,6 +34,7 @@
 - [枚举](/blog/typescript/枚举)
 - [类](/blog/typescript/类)
 - [类与接口](/blog/typescript/类与接口)
+- [泛型](/blog/typescript/泛型)
 
 ## Vue
 
