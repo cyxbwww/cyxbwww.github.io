@@ -65,6 +65,7 @@ export default defineConfig({
 						{ text: '类', link: '/blog/typescript/类' },
 						{ text: '类与接口', link: '/blog/typescript/类与接口' },
 						{ text: '泛型', link: '/blog/typescript/泛型' },
+						{ text: '声明合并', link: '/blog/typescript/声明合并' },
 					]
 				},
 				{
