@@ -4,7 +4,7 @@
 
 `this` 关键字是 JavaScript 中最复杂的机制之一。它是一个很特别的关键字，被自动定义在所有函数的作用域中。
 
-## 1.1 为什么要用 `this`
+### 1.1 为什么要用 `this`
 
 ``` javascript
 function identify() {
