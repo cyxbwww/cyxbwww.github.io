@@ -175,3 +175,52 @@ baz(); // <- baz 的调用位置
 我们来看看在函数的执行过程中调用位置如何决定 `this` 的绑定对象。
 
 你必须找到调用位置，然后判断需要应用下面四条规则中的哪一条。我们首先会分别解释这四条规则，然后解释多条规则都可用时它们的优先级如何排列。
+
+#### 2.2.1 默认绑定
+
+首先要介绍的是最常用的函数调用类型：独立函数调用。可以把这条规则看作是无法应用其它规则时的默认规则。
+
+``` javascript
+function foo() {
+  console.log(this.a);
+}
+ 
+var a = 2;
+ 
+foo(); // 2
+```
+
+我们注意到的第一件事是，声明在全局作用域中的变量就是全局对象的一个同名属性，它们本质上是同一个东西。
+
+接着我们可以看到调用 `foo()` 时，`this.a` 被解析成了全局变量 `a`。因为在本例中，函数调用时应用了 **`this` 的默认绑定**，因此 `this` 指向全局对象。
+
+在代码中，`foo()` 是直接使用不带任何修饰的函数引用进行调用的，因此只能使用**默认绑定**，无法应用其它规则。
+
+如果使用严格模式（strict mode），则不能将全局对象用于默认绑定，因此 `this` 会绑定到 `undefined`。
+
+``` javascript
+function foo() {
+  'use strict';
+  console.log(this.a);
+}
+ 
+var a = 2;
+ 
+foo(); // Uncaught TypeError: Cannot read properties of undefined
+```
+
+这里有一个微妙但是非常重要的细节，在严格模式下调用 `foo()` 不影响默认绑定。
+
+``` javascript
+function foo() {
+  console.log(this.a);
+}
+ 
+var a = 2;
+ 
+(function () {
+	'use strict';
+  foo(); // 2
+})();
+```
+
