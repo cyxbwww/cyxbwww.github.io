@@ -267,4 +267,54 @@ var obj1 = {
 obj1.obj2.foo(); // 42
 ```
 
+##### 隐式丢失
+
+一个最常见的 `this` 绑定问题就是被**隐式绑定**的函数会丢失绑定对象，也就是说它会应用**默认绑定**，从而把 `this` 绑定到全局对象或者 `undefined` 上。
+
+``` javascript
+function foo() {
+  console.log(this.a);
+}
+ 
+var obj = {
+  a: 2,
+	foo
+};
+ 
+var bar = obj.foo; // 函数别名
+ 
+var a = 'oops, global'; // a 是全局对象的属性
+ 
+bar(); // oops, global
+```
+
+虽然 `bar` 是 `obj.foo` 的一个引用，但实际上它引用的是 `foo` 函数本身，因此此时的 `bar()` 是一个不带任何修饰的函数调用，因此应用了默认绑定。
+
+一中更微妙、更常见并且更出乎意料的情况发生在传入回调函数时：
+
+``` javascript
+function foo() {
+  console.log(this.a);
+}
+ 
+function doFoo(fn) {
+  // fn 其实引用的是 foo
+ 
+  fn(); // <- 调用位置
+}
+ 
+var obj = {
+  a: 2,
+	foo
+};
+ 
+var a = 'oops, global';
+ 
+doFoo(obj.foo); // oops, global
+```
+
+参数传递其实就是一种隐式赋值，因此我们传入函数时也会被隐式赋值，所以结果和上一个例子一样。
+
+回调函数丢失 `this` 绑定是非常常见的。除此之外，还有一种情况 `this` 的行为会出乎我们意料：调用回调函数的函数可能会修改 `this`。在一个 JavaScript 库中事件处理器常会把回调函数的 `this` 强制绑定到触发事件的 DOM 元素上。
+
 
