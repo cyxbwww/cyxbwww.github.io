@@ -336,3 +336,96 @@ foo.call(obj); // 2
 ```
 
 但**显式绑定**仍然无法解决我们之前提出的丢失绑定问题。
+
+##### 硬绑定
+
+但是显式绑定的一个变种可以解决这个问题。
+
+``` javascript
+function foo() {
+  console.log(this.a);
+}
+ 
+var obj = {
+  a: 2
+};
+ 
+var bar = function() {
+  foo.call(obj);
+};
+ 
+bar(); // 2
+setTimeout(bar, 100); // 2
+ 
+// 硬绑定的 bar 不可能再修改它的 this
+bar.call(window); // 2
+```
+
+我们创建了函数 `bar()`，并在它的内部手动调用了 `foo.call(obj)`，因此强制把 `foo` 的 `this` 绑定到了 `obj`。无论之后如何调用函数 `bar`，它总会手动在 `obj` 上调用 `foo`。这种绑定是一种显式的强制绑定，因此我们称之为**硬绑定**。
+
+硬绑定的典型应用场景就是创建一个包裹函数，赋值接收参数并返回值：
+
+``` javascript
+function foo(something) {
+  console.log(this.a, something);
+  return this.a + something;
+}
+ 
+var obj = {
+  a: 2
+};
+ 
+var bar = function() {
+  return foo.apply(obj, arguments);
+};
+ 
+var b = bar(3); // 2 3
+ 
+console.log(b); // 5
+```
+
+另一种使用方法时创建一个可以重复使用的辅助函数：
+
+``` javascript
+function foo(something) {
+  console.log(this.a, something);
+  return this.a + something;
+}
+ 
+function bind(fn, obj) {
+  return function() {
+    return fn.apply(obj, arguments);
+	}
+}
+ 
+var obj = {
+  a: 2
+};
+ 
+var bar = bind(foo, obj);
+ 
+var b = bar(3); // 2 3
+ 
+console.log(b); // 5
+```
+
+由于**硬绑定**是一种非常常用的模式，所以 ES5 提供了内置的方法 `Function.prototype.bind`，它的用法如下：
+
+``` javascript
+function foo(something) {
+  console.log(this.a, something);
+  return this.a + something;
+}
+ 
+var obj = {
+  a: 2
+};
+
+var bar = foo.bind(obj);
+
+var b = bar(3); // 2 3
+
+console.log(b); // 5
+```
+
+`bind()` 会返回一个硬编码的新韩淑，它会把你指定的参数设置为 `this` 的上下文并调用原始函数。
