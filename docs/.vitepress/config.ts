@@ -81,22 +81,22 @@ export default defineConfig({
 						{ text: '进阶API', link: '/blog/vue/进阶API' }
 					]
 				},
-				{
-					text: 'Egg.js',
-					collapsible: true,
-					collapsed: true,
-					items: [
-						{ text: '基础', link: '/blog/eggjs/基础' }
-					]
-				},
-				{
-					text: 'Nest.js',
-					collapsible: true,
-					collapsed: true,
-					items: [
-						{ text: '基础', link: '/blog/nestjs/基础' }
-					]
-				},
+				// {
+				// 	text: 'Egg.js',
+				// 	collapsible: true,
+				// 	collapsed: true,
+				// 	items: [
+				// 		{ text: '基础', link: '/blog/eggjs/基础' }
+				// 	]
+				// },
+				// {
+				// 	text: 'Nest.js',
+				// 	collapsible: true,
+				// 	collapsed: true,
+				// 	items: [
+				// 		{ text: '基础', link: '/blog/nestjs/基础' }
+				// 	]
+				// },
 				{
 					text: 'NPM',
 					collapsible: true,
