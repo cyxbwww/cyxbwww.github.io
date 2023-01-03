@@ -686,3 +686,26 @@ bar(3); // a: 2, b: 3
 这两种方法都需要传入一个参数当作 `this` 的绑定对象。如果函数并不关心 `this` 的话，仍然需要传入一个占位值，这时 `null` 可能是一个不错的选择。
 
 > 在 ES6 中，可以用 `...` 操作符代替 `apply()` 来“展开”数组。但 ES6 中没有柯里化的相关语法，因此还是需要使用 `bind()`。
+
+##### 更安全的 `this`
+
+一种“更安全”的做法是传入一个特殊的对象，把 `this` 绑定到这个对象不会对程序产生任何副作用。我们可以创建一个“DMZ”（demilitarized zone，非军事区）对象——它就是一个空的非委托的对象。
+
+在 JavaScript 中创建一个空对象最简单的方法是 `Object.create(null)`。`Object.create(null)` 和 `{}` 很像，但是并不会创建 `Object.prototype` 这个委托，所以它比 `{}` “更空”。
+
+``` javascript
+function foo(a, b) {
+  console.log('a: ' + a + ', b: ' + b);
+}
+ 
+// DMZ 空对象
+var empty = Object.create(null);
+ 
+// 把数组“展开”成参数
+foo.apply(empty, [2, 3]); // a: 2, b: 3
+ 
+// 使用 bind() 进行柯里化
+var bar = foo.bind(empty, 2);
+bar(3); // a: 2, b: 3
+```
+
