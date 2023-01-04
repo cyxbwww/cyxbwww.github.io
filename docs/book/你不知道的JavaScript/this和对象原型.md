@@ -784,3 +784,64 @@ setTimeout(obj2.foo, 10); // name: obj <- 应用了软绑定
 ```
 
 软绑定版本的 `foo()` 可以手动将 `this` 绑定到 `obj2` 或者 `obj3` 上，但如果应用默认绑定，则会将 `this` 绑定到 `obj`。
+
+### 2.5 `this` 词法
+
+前面我们学习过的四条规则已经可以包含所有正常的函数。但 ES6 中有一种无法使用这些规则的特殊函数类型：箭头函数。它是根据外层（函数或者全局）作用域来决定 `this`。
+
+``` javascript
+function foo() {
+	// 返回一个箭头函数
+	return (a) => {
+    console.log(this.a)
+  }
+}
+ 
+var obj1 = {
+  a: 2
+};
+ 
+var obj2 = {
+  a: 3
+};
+ 
+var bar = foo.call(obj1);
+bar.call(obj2); // 2
+```
+
+`foo()` 内部创建的箭头函数会捕获调用时 `foo()` 的 `this`。由于 `foo()` 的 `this` 绑定到 `obj1`，`bar`（应用箭头函数）的 `this` 也会绑定到 `obj1`，箭头函数的绑定无法被修改（`new` 也不行）。
+
+箭头函数最常用于回调函数中，例如事件处理器或者定时器：
+
+``` javascript
+function foo() {
+	setTimeout(() => {
+    // 这里的 this 语法继承自 foo()
+    console.log(this.a)
+  }, 100);
+}
+ 
+var obj = {
+  a: 2
+};
+ 
+foo.call(obj); // 2
+```
+
+箭头函数可以像 `bind()` 一样确保函数的 `this` 被绑定到指定对象，此外，其重要性还体现在它用更常见的词法作用域取代了传统的 `this` 机制。实际上，在 ES6 之前我们就已经在使用一种几乎和箭头函数完全一样的模式。
+
+``` javascript
+function foo() {
+  var self = this
+	setTimeout(function() {
+    console.log(self.a)
+  }, 100);
+}
+ 
+var obj = {
+  a: 2
+};
+ 
+foo.call(obj); // 2
+```
+
