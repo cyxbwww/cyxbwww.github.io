@@ -734,3 +734,53 @@ o.foo(); // 3
 ```
 
 赋值表达式 `p.foo = o.foo` 的返回值时目标函数的引用，因此调用位置是 `foo()` 而不是 `p.foo()` 或者 `o.foo()`。 
+
+#### 2.4.3 软绑定
+
+使用硬绑定可以把 `this` 强制绑定到指定的对象（除了使用 `new` 时），防止函数调用应用默认绑定规则。但会大大降低函数的灵活性，使用硬绑定之后就无法使用隐式绑定或者显式绑定来修改 `this`。
+
+我们可以给默认绑定指定一个全局对象和 `undefined` 以外的值，这样就可以实现和硬绑定相同的效果，同时保留隐式绑定或者显式绑定来修改 `this`，一种被称为软绑定的方法。
+
+``` javascript
+Function.prototype.softBind = function(obj) {
+  var fn = this;
+  // 捕获所有 curried 参数
+	var curried = [].slice.call(arguments, 1);
+  var bound = function() {
+    return fn.apply(
+      (!this || this === window) ? obj : this,
+			curried.concat.apply(curried, arguments)
+		);
+	}
+ 
+  bound.prototype = Object.create(fn.prototype);
+  return bound;
+}
+```
+
+除了软绑定之外，`softBind()` 的其它原理和 ES5 内置的 `bind()` 类似。它会对指定的函数进行封装，首先检查调用时的 `this`，如果 `this` 绑定到全局对象或者 `undefined`，那就把指定的默认对象 `obj` 绑定到 `this`，否则不会修改 `this`。此外这段代码还支持可选的柯里化。
+
+下面看看 `softBind()` 是否实现了软绑定功能：
+
+``` javascript
+function foo() {
+  console.log('name: ' + this.name)
+}
+ 
+var obj = { name: 'obj' },
+		obj2 = { name: 'obj2' },
+		obj3 = { name: 'obj3' };
+ 
+var fooOBJ = foo.softBind(obj);
+ 
+fooOBJ(); // name: obj
+ 
+obj2.foo = foo.softBind(obj);
+obj2.foo(); // name: obj2
+ 
+fooOBJ.call(obj3); // name: obj3
+ 
+setTimeout(obj2.foo, 10); // name: obj <- 应用了软绑定
+```
+
+软绑定版本的 `foo()` 可以手动将 `this` 绑定到 `obj2` 或者 `obj3` 上，但如果应用默认绑定，则会将 `this` 绑定到 `obj`。
