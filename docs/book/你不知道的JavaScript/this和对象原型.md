@@ -857,3 +857,21 @@ foo.call(obj); // 2
 有些调用可能在无意间使用默认绑定规则。如果想“更安全”地忽略 `this` 绑定，我们可以使用一个 DMZ 对象，比如 `empty = Object.create(null)`，以保护全局对象。
 
 ES6 中的箭头函数并不会使用四条标准的绑定规则，而是根据当前的词法作用域来决定 `this`，具体来说，箭头函数会继承外层函数的 `this` 绑定（无论 `this` 绑定到什么）。这其实和 ES6 之前代码中的 `self = this` 机制一样。
+
+## 3. 对象
+
+### 3.1 语法
+
+对象可以通过两种形式定义：声明（文字）形式和构造形式。
+
+``` javascript
+// 文字语法
+const myObj1 = {
+  key: 'value'
+};
+
+// 构造形式
+const myObj2 = new Object();
+myObj2.key = 'value';
+```
+
