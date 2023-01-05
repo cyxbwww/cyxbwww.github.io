@@ -875,3 +875,17 @@ const myObj2 = new Object();
 myObj2.key = 'value';
 ```
 
+### 3.2 类型
+
+对象是 JavaScript 的基础，在 JavaScript 中一共有六种主要类型（语言类型）：
+
+- `string`
+- `number`
+- `boolean`
+- `null`
+- `undefined`
+- `object`
+
+**简单基本类型**本身并不是对象。`null` 有时会被当作一种对象类型，但这其实是语言本身的一个 bug，即对 `null` 执行 `typeof null` 时会返回字符串 `"object"`。实际上 `null` 本身时基本类型。
+
+JavaScript 中由许多特殊的对象子类型，我们可以称之为复杂基本类型。
