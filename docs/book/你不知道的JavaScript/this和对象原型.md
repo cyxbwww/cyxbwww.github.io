@@ -877,7 +877,7 @@ myObj2.key = 'value';
 
 ### 3.2 类型
 
-对象是 JavaScript 的基础，在 JavaScript 中一共有六种主要类型（语言类型）：
+对象是 JavaScript 的基础，在 JavaScript 中一共有六种主要类型（语言类型）
 
 - `string`
 - `number`
@@ -889,3 +889,36 @@ myObj2.key = 'value';
 **简单基本类型**本身并不是对象。`null` 有时会被当作一种对象类型，但这其实是语言本身的一个 bug，即对 `null` 执行 `typeof null` 时会返回字符串 `"object"`。实际上 `null` 本身时基本类型。
 
 JavaScript 中由许多特殊的对象子类型，我们可以称之为复杂基本类型。
+
+####  内置对象
+
+JavaScript 中还有一些对象子类型，通常被称为内置对象。
+
+- `String`
+- `Number`
+- `Boolean`
+- `Object`
+- `Function`
+- `Array`
+- `Date`
+- `RegExp`
+- `Error`
+
+这些内置函数可以当作构造函数（由 `new` 产生的函数调用）来使用，从而可以构造一个对应子类型的新对象：
+
+``` javascript
+var strPrimitive = 'I am a string';
+console.log(typeof strPrimitive); // string
+console.log(strPrimitive instanceof String); // false
+ 
+var strObject = new String('I am a string');
+console.log(typeof strObject); // object
+console.log(strObject instanceof String); // true
+ 
+// 使用 sub-type 检查对象
+console.log(Object.prototype.toString.call(strObject)); // [object String]
+```
+
+子类型在内部借用了 `Object` 中的 `toString()` 方法，`strObject` 是由 `String` 构造函数创建的一个对象。
+
+`null` 和 `undefined` 没有对应的构造形式，它们只有文字形式。相反，`Date` 只有构造形式，没有文字形式。
