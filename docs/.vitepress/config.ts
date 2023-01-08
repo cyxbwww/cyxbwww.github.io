@@ -19,7 +19,7 @@ export default defineConfig({
 			{ text: '书单', link: '/book/' },
 			{ text: '个人项目', link: '/demo/' },
 			{ text: 'GitHub', link: 'https://github.com/cyxbwww/vitepress-blog' },
-			{ text: '掘金', link: 'https://juejin.cn/user/2058727243123982/posts' }
+			// { text: '掘金', link: 'https://juejin.cn/user/2058727243123982/posts' }
 		],
 		sidebar: {
 			'/blog/': [
