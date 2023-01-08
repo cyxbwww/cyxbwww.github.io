@@ -952,3 +952,19 @@ console.log(myObject['3']); // bar
 console.log(myObject['[object Object]']); // baz
 ```
 
+#### 3.3.1 可计算属性名
+
+ES6 增加了**可计算属性名**，可以在文字形式中使用 `[]` 包裹一个表达式来当作属性名：
+
+``` javascript
+var prefix = 'foo';
+ 
+var myObject = {
+  [prefix + 'bar']: 'hello',
+	[prefix + 'baz']: 'world'
+};
+ 
+console.log(myObject['foobar']); // hello
+console.log(myObject['foobaz']); // world
+```
+
