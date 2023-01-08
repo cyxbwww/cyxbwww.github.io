@@ -922,3 +922,33 @@ console.log(Object.prototype.toString.call(strObject)); // [object String]
 子类型在内部借用了 `Object` 中的 `toString()` 方法，`strObject` 是由 `String` 构造函数创建的一个对象。
 
 `null` 和 `undefined` 没有对应的构造形式，它们只有文字形式。相反，`Date` 只有构造形式，没有文字形式。
+
+### 3.3 内容
+
+对象的内容是由一些存储在特定命名空间位置的（任意类型的）值组成的，我么称之为属性。
+
+``` javascript
+var myObject = {
+  a: 2
+};
+ 
+console.log(myObject.a); // 2
+console.log(myObject['a']); // 2
+```
+
+要访问对象中的属性值，我们需要使用 `.` 操作符（属性访问）或 `[]` 操作符（键访问）。
+
+在对象中，属性名永远都是字符串。如果我们使用 `string`（字面量）以外的其它值作为属性名，那它首先会被转换为一个字符串：
+
+``` javascript
+var myObject = {};
+ 
+myObject[true] = 'foo';
+myObject[3] = 'bar';
+myObject[myObject] = 'baz';
+ 
+console.log(myObject['true']); // foo
+console.log(myObject['3']); // bar
+console.log(myObject['[object Object]']); // baz
+```
+
