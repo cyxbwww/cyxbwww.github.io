@@ -989,3 +989,7 @@ console.log(myObject['foobaz']); // world
 ### 3.4 遍历
 
 ### 3.5 小结
+
+## 4. 混合对象“类”
+
+面向类的设计模式：实例化（instantiation）、继承（inheritance）和（相对）多态（polymorphism）。
