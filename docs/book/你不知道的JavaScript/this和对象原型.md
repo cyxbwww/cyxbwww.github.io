@@ -1071,3 +1071,34 @@ JavaScript 属于哪一类呢？在相当长的一段时间里，JavaScript 只�
 ![闭包1.png](../../images/建造.png)
 
 箭头的方向是从左向右、从上向下，它表示概念和物理意义上发生的复制操作。
+
+#### 4.2.2 构造函数
+
+类实例是由一个特殊的类方法构造的，这个方法名通常和类名相同，被称为构造函数。这个方法的任务就是初始化实例需要的所有信息（状态）。
+
+举例来说，思考下面这个关于类的伪代码（编造出来的语法）：
+
+``` javascript
+class CoolGuy {
+  specialTrick = 'nothing';
+  
+  CoolGuy(trick) {
+    specialTrick = trick;
+	}
+  
+  showOff() {
+    output('Here\'s my trick: ', specialTrick);
+	}
+}
+```
+
+我们可以调用类构造函数来生成一个 `CoolGuy` 实例：
+
+``` javascript
+Joe = new CoolGuy('jumping rope');
+Joe.showOff(); // Here's my trick: jumping rope
+```
+
+`CoolGuy` 类有一个 `CoolGuy` 构造函数，执行 `new CoolGuy()` 时实际上调用的就是它。构造函数会返回一个对象（也就是类的一个实例），之后我们可以在这个对象上调用 `showOff()` 方法，来输出指定 `CoolGuy` 的特产。
+
+类构造函数**属于**类，而且通常和类同名。此外，构造函数大多需要用 `new` 来调，这样语言引擎才知道你想要构造一个新的类实例。
