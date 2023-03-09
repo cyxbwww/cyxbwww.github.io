@@ -19,3 +19,9 @@ BFC 是一个独立的空间，里面子元素的渲染不影响外面的布局�
 - `display: inline-block` / `table-cell` / `flex`
 - `position: absolute` / `fixed`
 
+## 2. 盒子模型
+
+### 什么是盒子模型
+
+盒子模型就是元素再网页中实际占据的大小。
+
