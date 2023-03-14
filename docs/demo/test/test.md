@@ -72,3 +72,13 @@ BFC 是一个独立的空间，里面子元素的渲染不影响外面的布局
 - 父级加 `overflow: hidden`
 - 父级设置 `clearFix`
 - 父级也浮动
+
+## 7. 垂直水平居中
+
+### 常见的垂直水平居中方法
+
+- `position + margin` 负值的方法（宽高固定）
+- `position + margin: auto`（宽高固定）
+- `display: table-cell + vertical-align: middle`（宽度固定）
+- `position + transform`（不需要固定宽高）
+- `flex`（不需要固定宽高）
